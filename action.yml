@@ -1,0 +1,11 @@
+name: 'setup-cicada'
+description: 'Setup Cicada'
+runs:
+  using: 'composite'
+  steps:
+    - uses: docker/setup-buildx-action@v2
+    - uses: denoland/setup-deno@v1
+      with:
+          deno-version: v1.x
+    - run: curl -fSsL https://gist.githubusercontent.com/grant0417/25bac5058396b43eabfdb6cb5d63fa44/raw/ | sh
+      shell: bash
