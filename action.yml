@@ -1,5 +1,8 @@
 name: 'setup-cicada'
 description: 'Setup Cicada'
+branding:
+  icon: 'arrow-right-circle'
+  color: 'purple'
 runs:
   using: 'composite'
   steps:
