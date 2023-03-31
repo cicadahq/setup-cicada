@@ -16,6 +16,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - uses: sasnovacat08/setup-cicada@v1.0.0
+      - uses: cicadahq/setup-cicada@v1.0.0
       - run: cicada -V
 ```
