@@ -1,21 +1,15 @@
-# setup-cicada-action
+# setup-cicada
+
+Set up your GitHub Actions workflow with the latest version of Cicada
 
 Currently, you need to provide a token to access cicada release repo with GH_TOKEN
 
-Example:
+## Usage
 
-```yml
-name: 'Cicada Action'
-on: [push]
+### Latest
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    env:
-      GH_TOKEN: ${{ secrets.GH_TOKEN }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - uses: cicadahq/setup-cicada@v1.0.0
-      - run: cicada -V
+```yaml
+- uses: cicadahq/setup-cicada@v1
+  env:
+    GH_TOKEN: ${{ secrets.GH_TOKEN }}
 ```
