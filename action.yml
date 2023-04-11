@@ -10,5 +10,5 @@ runs:
     - uses: denoland/setup-deno@v1
       with:
           deno-version: v1.x
-    - run: curl -fSsL https://gist.githubusercontent.com/grant0417/25bac5058396b43eabfdb6cb5d63fa44/raw/ | sh
+    - run: curl -fSsL https://raw.githubusercontent.com/cicadahq/cicada/main/download.sh | sh
       shell: bash
