@@ -14,6 +14,8 @@ jobs:
 
       - name: Setup Cicada
         uses: ./
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Cicada Version
         run: cicada -V
